@@ -128,3 +128,40 @@ body {
 	font-size: calc(var(--index) * .75);
 	letter-spacing: calc(var(--index) / 37.5);
 }
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar__menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__menu li {
+    margin-right: 20px;
+}
+
+.navbar__menu a {
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.3s;
+}
+
+.navbar__menu a:hover {
+    color: #9d822b;
+}
